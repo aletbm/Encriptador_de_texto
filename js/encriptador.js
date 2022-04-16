@@ -2,7 +2,7 @@ function encriptar(traduccion){
     document.querySelector("#warning").style.fontSize = "12px";
     var textarea = document.querySelector("#texto");
     const texto = textarea.value;
-    if (texto.length > 0){
+    if (texto != ""){
         var out = ""
         for(var i=0; i < texto.length; i++){
             if((texto[i] < 'a') && (texto[i] > 'z') && (texto[i] != ' ')){
@@ -46,7 +46,7 @@ function desencriptar(traduccion){
     document.querySelector("#warning").style.fontSize = "12px";
     var textarea = document.querySelector("#texto");
     var texto = textarea.value;
-    if (texto.length > 0){
+    if (texto != ""){
         for(var i=0; i < texto.length; i++){
             if((texto[i] < 'a') && (texto[i] > 'z') && (texto[i] != ' ')){
                 document.querySelector("#warning").style.color = "red";
