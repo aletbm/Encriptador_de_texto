@@ -1,5 +1,6 @@
 function encriptar(traduccion){
     document.querySelector("#warning").style.fontSize = "12px";
+    document.querySelector("#warning").style.color = "#495057";
     var textarea = document.querySelector("#texto");
     const texto = textarea.value;
     if (texto != ""){
@@ -44,6 +45,7 @@ function encriptar(traduccion){
 
 function desencriptar(traduccion){
     document.querySelector("#warning").style.fontSize = "12px";
+    document.querySelector("#warning").style.color = "#495057";
     var textarea = document.querySelector("#texto");
     var texto = textarea.value;
     if (texto != ""){
