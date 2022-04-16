@@ -1,4 +1,4 @@
-<div align="center"><img src="img/logo-aluralatam-oracle.svg" width="200"/><img src="img/rh03-one-v-black-lad.png" width="200"/></div>
+<div align="center"><img src="img/logo-aluralatam-oracle.svg" width="200"/><img src="img/rh03-one-v-black-lad2.png" width="200"/></div>
 
 # 🔏 Encriptador de texto
 
