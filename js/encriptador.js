@@ -5,7 +5,7 @@ function encriptar(traduccion){
     if (texto != ""){
         var out = ""
         for(var i=0; i < texto.length; i++){
-            if((texto[i] < 'a') && (texto[i] > 'z') && (texto[i] != ' ')){
+            if((texto[i] < 'a') || (texto[i] > 'z') || (texto[i] != ' ')){
                 document.querySelector("#warning").style.color = "red";
                 document.querySelector("#warning").style.fontSize = "16px";
                 return;
@@ -48,7 +48,7 @@ function desencriptar(traduccion){
     var texto = textarea.value;
     if (texto != ""){
         for(var i=0; i < texto.length; i++){
-            if((texto[i] < 'a') && (texto[i] > 'z') && (texto[i] != ' ')){
+            if((texto[i] < 'a') || (texto[i] > 'z') || (texto[i] != ' ')){
                 document.querySelector("#warning").style.color = "red";
                 document.querySelector("#warning").style.fontSize = "16px";
                 return;
