@@ -5,7 +5,7 @@ function encriptar(traduccion){
     if (texto != ""){
         var out = ""
         for(var i=0; i < texto.length; i++){
-            if((texto[i] < 'a') || (texto[i] > 'z')){
+            if((texto[i] >= 'A') && (texto[i] <= 'Z') || (texto[i].toUpperCase() == 'Á') || (texto[i].toUpperCase() == 'É') || (texto[i].toUpperCase() == 'Í') || (texto[i].toUpperCase() == 'Ó') || (texto[i].toUpperCase() == 'Ú')){
                 document.querySelector("#warning").style.color = "red";
                 document.querySelector("#warning").style.fontSize = "16px";
                 return;
@@ -48,7 +48,7 @@ function desencriptar(traduccion){
     var texto = textarea.value;
     if (texto != ""){
         for(var i=0; i < texto.length; i++){
-            if((texto[i] < 'a') || (texto[i] > 'z')){
+            if((texto[i] >= 'A') && (texto[i] <= 'Z') || (texto[i].toUpperCase() == 'Á') || (texto[i].toUpperCase() == 'É') || (texto[i].toUpperCase() == 'Í') || (texto[i].toUpperCase() == 'Ó') || (texto[i].toUpperCase() == 'Ú')){
                 document.querySelector("#warning").style.color = "red";
                 document.querySelector("#warning").style.fontSize = "16px";
                 return;
